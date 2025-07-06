@@ -603,7 +603,7 @@ header ul {
   flex-shrink: 0;
   width: 100%;
   text-align: center;
-  animation: learning 6s ease-in-out infinite;
+  
 }
 .swiper-slide img {
   width: 100%;
