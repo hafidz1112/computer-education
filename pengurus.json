@@ -1,67 +1,67 @@
 [
-    {
+  {
     "nama": "Satria Prasetyo",
     "jabatan": "Ketua Umum",
     "gambar": "/gambar/ketum.JPG"
-    },
-    {
+  },
+  {
     "nama": "M.Hafizh Naufal",
     "jabatan": "Wakil Ketua",
-    "gambar": "/gambar/wakil-ketua.jpg"
-    },
-    {
+    "gambar": "/gambar/wakil-ketua.JPG"
+  },
+  {
     "nama": "Almanda Nabilah",
     "jabatan": "Sekretaris 1",
-    "gambar": "/gambar/sekretaris 1.jpg"
-    },
-    {
+    "gambar": "/gambar/sekretaris 1.JPG"
+  },
+  {
     "nama": "Zahra Arin",
     "jabatan": "Sekretaris 2",
-    "gambar": "/gambar/sekretaris 2.jpg"
-    },
-    {
+    "gambar": "/gambar/sekretaris 2.JPG"
+  },
+  {
     "nama": "Bintang Zahra L.",
     "jabatan": "Bendahara 1",
-    "gambar": "/gambar/bendahara 1.jpg"
-    },
-    {
+    "gambar": "/gambar/bendahara 1.JPG"
+  },
+  {
     "nama": "Siti Nur Fadillah",
     "jabatan": "Bendahara 2",
-    "gambar": "gambar/bendahara 2.jpg"
-    },
-    {
+    "gambar": "gambar/bendahara 2.JPG"
+  },
+  {
     "nama": "Sherly Nefriady Chaniago",
     "jabatan": "Ketua Divisi Organisasi",
-    "gambar": "gambar/ketua div organisasi.jpg"
-    },
-    {
+    "gambar": "gambar/ketua div organisasi.JPG"
+  },
+  {
     "nama": "Muhamad Ravi Nugraha ",
     "jabatan": "Ketua subdiv PO",
-    "gambar": "gambar/ketua sub div PO.jpg"
-    },
-    {
+    "gambar": "gambar/ketua sub div PO.JPG"
+  },
+  {
     "nama": "M.Nurul Bisyril Mustofa",
     "jabatan": "Ketua subdiv kaderisasi",
-    "gambar": "gambar/ketu subdiv Kaderisasi.jpg"
-    },
-    {
+    "gambar": "gambar/ketu subdiv Kaderisasi.JPG"
+  },
+  {
     "nama": "Rizal Syalvian ",
     "jabatan": "Ketua subdiv bismit",
-    "gambar": "gambar/ket subdiv bismit.jpg"
-    },
-    {
+    "gambar": "gambar/ket subdiv bismit.JPG"
+  },
+  {
     "nama": "M. Afrizal Azhari ",
     "jabatan": "Ketua subdiv dokominfo",
-    "gambar": "gambar/ket subdiv dokominfo.jpg"
-    },
-    {
+    "gambar": "gambar/ket subdiv dokominfo.JPG"
+  },
+  {
     "nama": "Muhammad Hafidz",
     "jabatan": "Ketua Sub Div PTI",
-    "gambar": "gambar/Sub Div PTI.jpg"
-    },
-    {
+    "gambar": "gambar/Sub Div PTI.JPG"
+  },
+  {
     "nama": "Ica Nur Faidzah",
     "jabatan": "Sub Div PTI",
-    "gambar": "gambar/subdiv-PTI.jpg"
-    }
+    "gambar": "gambar/subdiv-PTI.JPG"
+  }
 ]
