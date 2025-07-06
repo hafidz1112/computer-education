@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', function () {
     // });
 
     // Load data pengurus dari JSON
-    fetch('data/pengurus.json')
+    fetch('pengurus.json')
         .then(response => response.json())
         .then(data => {
             const slider = document.getElementById('slider-pengurus');
