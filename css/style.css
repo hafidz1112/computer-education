@@ -655,6 +655,9 @@ header ul {
   padding: 20px 20px;
   text-align: center;
   background-color: #deffdc;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: var(--box-shadow);
 }
 .strip {
   display: flex;
