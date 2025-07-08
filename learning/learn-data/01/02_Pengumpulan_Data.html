@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            list-style: square;
+        }
+
+        /* Navbar Start */
+        nav {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 30px 200px;
+        }
+
+        .mobile-nav-toggle {
+          display: none;
+          background: none;
+          border: none;
+          font-size: 2rem;
+          cursor: pointer;
+        }
+
+        nav img {
+          width: 300px;
+        }
+
+        nav ul {
+          display: flex;
+          gap: 120px;
+        }
+
+        nav ul li {
+          color: green;
+          font-size: 3rem;
+          list-style: none;
+          cursor: pointer;
+        }
+
+        #navbar-line {
+          margin-bottom: 0px;
+        }
+        /* Navbar End */
+        
+        .main-content {
+          margin: 100px 200px;
+          line-height: 1.5;
+        }
+
+        h1 {
+          margin: 30px;
+          color: green;
+          font-size: 5rem;
+        }
+
+        #header-line{
+          height: 10px;
+          background-color: green;
+
+          margin-bottom: 25px;
+        }
+
+        #header-box{
+          background-color: green;
+          height: 50px;
+          width: 50px;
+        }
+
+        .header-container {
+          display: flex;
+          align-items: center;
+        }
+
+        .content{
+            margin: 25px 0px;
+            color: gray;
+            font-size: 2.2rem;
+            text-align: justify;
+        }
+
+        .content h2{
+            color: green;
+        }
+
+        .content ul{
+            list-style-type: square !important;
+            margin-left: 40px;
+        }
+
+        .content ul li{
+            margin-bottom: 15px;
+        }
+
+        .content ul li span{
+            font-weight: bold;
+            color: green;
+        }
+
+        .content-image {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .content-image img{
+            width: 1500px;
+            text-align: center;
+        }
+
+        .content-example{
+            border: 1px solid green;
+            border-left: 10px;
+            border-radius: 10px;
+        }
+
+        /* Tablet Responsiveness (1280px) */
+        @media (max-width: 1280px) {
+          nav {
+            margin: 20px 60px;
+          }
+
+          nav ul {
+            gap: 60px;
+          }
+
+          nav ul li {
+            font-size: 2rem;
+          }
+
+          nav img {
+            width: 200px;
+          }
+
+          .main-content {
+            margin: 60px 100px;
+          }
+
+          /* ==================================
+          CONTINUE FROM HERE
+          ================================== */
+
+          h1 {
+            font-size: 2.1rem;
+            margin: 25px;
+          }
+
+          .content {
+            font-size: 1.5rem;
+            margin: 20px 0;
+          }
+
+          .content h2 {
+            font-size: 1.7rem;
+          }
+
+          .content ul {
+            margin-left: 30px;
+          }
+
+          .content ul li {
+            margin-bottom: 12px;
+          }
+
+          .content-image img {
+            width: 900px;
+          }
+
+          #header-box {
+            height: 30px;
+            width: 30px;
+          }
+
+          #header-line {
+            height: 8px;
+          }
+        }
+
+
+        /* Mobile Responsiveness (768px) */
+        @media (max-width: 768px) {
+          nav {
+            margin: 20px;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          .mobile-nav-toggle {
+            display: block;
+            position: absolute;
+            right: 20px;
+            top: 30px;
+            z-index: 1000;
+          }
+
+          nav ul {
+            display: none;
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            padding: 20px 0;
+            align-items: center;
+          }
+
+          nav ul.active {
+            display: flex;
+          }
+
+          nav ul li {
+            font-size: 2rem;
+          }
+
+          nav img {
+            width: 200px;
+          }
+
+          .main-content {
+            margin: 50px 30px;
+          }
+
+          h1 {
+            font-size: 2rem;
+            margin: 15px;
+          }
+
+          #header-box {
+            height: 20px;
+            width: 20px;
+          }
+
+        .content{
+            margin: 25px 0px;
+            color: gray;
+            padding-top: 30px;
+        }
+
+        .content p {
+            text-align: justify;
+            font-size: 1.2rem;
+        }
+
+        .content h2{
+            font-size: 1.8rem;
+        }
+
+        .content ul{
+            font-size: 1.2rem;
+        }
+
+        .content-image {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .content-image img{
+            width: 500px;
+            text-align: center;
+        }
+
+        }
+
+        /* Small Mobile (480px) */
+        @media (max-width: 480px) {
+          .header-container {
+            margin-left: 10px;
+          }
+
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Start -->
+    <nav>
+      <img src="../../../gambar/Logo_CE-removebg-preview.png" alt="">
+      <button class="mobile-nav-toggle" id="mobile-nav-toggle">☰</button>
+      <ul id="nav-menu">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Learning</li>
+      </ul>
+    </nav>
+    <hr id="navbar-line">
+    <!-- Header End -->
+    
+    <!-- Main Start -->
+    <div class="main-content">
+      <div class="header-container">
+        <div id="header-box"> </div>
+        <h1>Pengumpulan Data</h1>
+      </div>
+      <hr id="header-line">
+
+
+      <div class="content">
+        <p>
+        Dalam statistika, terdapat tiga tahap utama yang sangat penting untuk mendapatkan informasi yang akurat dan bermakna dari data. Ketiga tahap tersebut adalah pengumpulan data, pengolahan data, dan penyajian data yang lebih jelasnya dapat dilihat pada gambar di atas. Bagian ini akan khusus membahas tentang pengumpulan data.
+        <br><br>
+        Terdapat dua jenis data apabila dilihat dari cara pengumpulannya, yaitu Data Primer dan Data Sekunder. 
+        </p>
+
+        <ul>
+            <li><span>Data Primer:</span> data yang langsung diperoleh dari sumber pertama atau objek yang diteliti. Contoh Data Primer yaitu Data tinggi badan, berat badan, usia, dan asal dari seluruh mahasiswa dalam satu kelas, lalu menganalisa dan memanfaatkannya secara langsung. Untuk mendapatkan Data Primer memerlukan pekerjaan yang cukup rumit dalam pengumpulan data, metode pengumpulan data harus disampaikan dan dapat dipertanggungjawabkan, perlu melakukan anotasi/pelabelan data jika akan dilakukan analisa prediktif. </li>
+            <li><span>Data Sekunder:</span> data yang telah dikumpulkan dan dipublikasikan oleh pihak lain. Contoh Data Sekunder yaitu Data Titanic, IMDB Movie, Data Bunga Iris. pada data sekunder tidak diperlukan melakukan pengumpulan data, analisa data dapat langsung dilakukan dan dibandingkan dengan hasil analisa yang dilakukan oleh orang lain/peneliti lain.</li>
+        </ul>
+
+        <h2>Teknik Pengumpulan Data</h2>
+
+        <h3>Registrasi/Pendaftaran</h3>
+        <p>Registrasi adalah metode yang dilakukan dengan melakukan perekaman data (administrasi) bisa diambil dari satu institusi tertentu, atau kolektif dari gabungan beberapa institusi. Proses Registrasi diwajibkan untuk diambil dengan data yang valid dan akurasi tinggi khususnya pada data tertentu. Pada Pendaftaran akun E-Commerce diminta validasi email dan No HP.</p>
+        <div class="content-example">
+            <ul>
+                <li>Pendaftaran data penduduk dalam satu wilayah. Setiap kali ada penduduk baru yang masuk, atau lahir atau meninggal, akan dicatat dan direkam oleh instansi berwenang. </li>
+                <li>Pendaftaran akun baru pengguna kartu prabayar. Dilakukan oleh provider telepon dan melakukan validasi NIK yang diambil dari data kependudukan</li>
+            </ul>
+        </div>
+
+        <h3>Sensus</h3>
+        <p>Metode Pengumpulan data Dimana seluruh populasi elemen yang menjadi objek penelitian/analisa data digali/investigasi informasinya satu per satu. Sensus dilakukan dengan meminimalisir proses sampling sehingga akurasi data dapat dipertanggungjawabkan dengan baik. Salah satu kelemahan dari Sensus adalah waktu pengumpulan data yang lama. Waktu yang lama cukup berpengaruh terhadap akurasi dari pengumpul data (tim sensus), yang akan meningkatkan kesalahan dalam input data. Asalkan jumlah tim sensus mencukupi, maka kelemahan/ kesalahan ini dapat diminimalisir juga dengan baik.</p>
+        <div class="content-example">
+            <ul>
+                <li>Sensus Penduduk 10 tahunan</li>
+                <li>Sensus tahunan Badan Pusat Statistik (BPS)</li>
+            </ul>
+        </div>
+
+        <h3>Survei</h3>
+        <p>Metode Pengumpulan data dimana seluruh populasi elemen yang menjadi objek penelitian / Analisa data di gali / investigasi informasinya dengan diwakilkan. Survei juga dikenal dengan istilah sampling. Semakin tinggi jumlah responden (objek pengisi survei), maka akan makin tinggi juga akurasi dari data yang di sampling. Responden yang disurvei wajib mewakili objek penelitian yang diukur. Sebagai contoh jika menginginkan data makanan kesukaan remaja saat ini, maka responden yang dipilih harus pada range usia remaja.</p>
+        <div class="content-example">
+            <ul>
+                <li>Kuis Famili 100</li>
+                <li>Polling Cepat (QuickCount) Pemilu dari LSM</li>
+            </ul>
+        </div>
+
+        <h3>Pengujian</h3>
+        <p>Metode Pengumpulan data dimana pengambil data berperan penuh untuk mendapatkan data sesuai dengan kebutuhan. Tujuan dari Pengumpulan data ini adalah pengaruh apa yang akan muncul jika perlakuan khusus diberikan.</p>
+        <div class="content-example">
+            <p>Apakah warna dari bola basket berpengaruh terhadap jumlah shooting bola yang dilakukan oleh pemain basket? Kelompok acak dari siswa dipilih dan diminta untuk melakukan shooting menggunakan bola basket warna normal, dan data disimpan. Kelompok yang sama diminta juga untuk shooting ulang dengan bola warna yang berbeda, dan dicatat Kembali hasilnya. Proses ini dikenal dengan nama Experimental Study, dimana pengumpul data memanipulasi kondisi studi dengan mengubah warna bola.</p>
+        </div>
+
+        <h3>Pengamatan</h3>
+        <p>Metode Pengumpulan data dimana pengambil data mengambil data secara langsung tanpa dapat melakukan intervensi atau rekayasa terhadap data yang diambil.</p>
+        <div class="content-example">
+            <p>Apakah ada kaitannya siswa yang mengambil insentif UTBK terhadap nilai dan hasil UTBK nya? Untuk melakukan pengumpulan datanya, kelompok siswa yang mengambil UTBK di survei. Score dari siswa yang mengikuti dan tidak mengikuti insentif UTBK direkam dan akan dibandingkan. Analisa statistika dilakukan pada data terekam. Proses ini dikenal dengan nama Observational Study dimana pengguna data tidak dapat melakukan manipulasi data.</p>
+        </div>
+
+      </div>
+    </div>
+
+        <!-- footer start -->
+    <svg class="editorial" viewBox="0 24 150 25" preserveaspectratio="none">
+      <defs>
+        <path id="gentle-wave" 
+        d="M-160 44c30 0 
+        58-18 88-18s 
+        58 18 88 18 
+        58-18 88-18 
+        58 18 88 18 
+        v44h-352z"/>
+      </defs>
+      <g class="parallax">
+          <use xlink:href="#gentle-wave" x="50" y="0" fill="#8efa8e"/>
+          <use xlink:href="#gentle-wave" x="50" y="3" fill="#78f378"/>
+          <use xlink:href="#gentle-wave" x="50" y="6" fill="rgb(95, 244, 95)"/>
+        </g>
+    </svg>
+    <!-- svg end -->
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <img src="../../../gambar/Logo_CE-removebg-preview.png" alt="">
+        <div class="footer-social">
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+            <i class="ph ph-facebook-logo"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="ph ph-instagram-logo"></i>
+          <a
+            href="https://wa.me/6281234567890"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="ph ph-whatsapp-logo"></i>
+          </a>
+        </div>
+        <div class="footer-brand">
+          <p>&copy; 2025 All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile navigation toggle
+      const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+      const navMenu = document.getElementById('nav-menu');
+
+      mobileNavToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    </script>
+</body>
+</html>
